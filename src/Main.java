@@ -1,3 +1,4 @@
+import java.util.HashSet;
 import java.util.TreeSet;
 
 public class Main {
@@ -9,17 +10,19 @@ public class Main {
         tashSet.add(new City(5,"Moscow"));
         tashSet.add(new City(9,"Bishkek"));
         tashSet.add(new City(8,"Osh"));
-
-
-
-
-
+        HashSet<City>hashSet=new HashSet<>();
         for (City d:tashSet) {
-            if (d.getCode()%2 == 1) {
-                System.out.println(d);
+            if (d.getCode()%2==1){
+                hashSet.add(d);
             }
 
-        }
+        }        System.out.println(hashSet);
+
+
+
+
+
+
 
     }
 }
